@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>{% block title %}Student Registration System{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'student_registration' %}">Student Registration</a></li>
+            <li><a href="{% url 'course_creation' %}">Course Creation</a></li>
+            <li><a href="{% url 'course_list' %}">Course List</a></li>
+            <li><a href="{% url 'student_list' %}">Student List</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
